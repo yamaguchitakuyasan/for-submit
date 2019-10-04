@@ -1,0 +1,91 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+.clearfix::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+main{
+	width: 960px;
+	margin: 50px auto;
+}
+
+.step-box {
+    margin-right: 30px;
+    padding: 10px;
+    float: left;
+    border: 1px solid #eee;
+    position: relative;
+    width: 300px;
+}
+
+.step-box:last-child {
+	margin: 0;
+}
+
+.step-img1 {
+   background-image: url(img3/flow01.png);
+   height: 150px;
+   background-position: bottom;
+   background-size: cover;
+}
+
+.step-img2 {
+   background-image: url(img3/flow02.png);
+   height: 150px;
+   background-position: bottom;
+   background-size: cover;
+}
+
+.step-img3 {
+   background-image: url(img3/flow03.png);
+   height: 150px;
+   background-position: bottom;
+   background-size: cover;
+}
+
+.step-num {
+	position: absolute;
+	left: 0;
+	top: 0;
+	background-color: #ff9A4B;
+	color: #fff;
+	padding: 3px;
+}
+
+.title {
+	margin: 15px 0 5px;
+}
+
+@media screen and (max-width: 768px) {
+  main {
+    width: 80%;
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+  .step-box {
+    width: 90%;
+    margin-bottom: 20px;
+    float: none;
+  }
+  .step-img1 {
+    background-position: center bottom;
+    height: 210px;
+  }
+  .step-img2 {
+    background-position: center bottom;
+    height: 210px;
+  }
+  .step-img3 {
+    background-position: center bottom;
+    height: 210px;
+  }
+  .text {
+    width: 550px;
+  }
+}
