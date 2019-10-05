@@ -64,28 +64,32 @@ main{
 
 @media screen and (max-width: 768px) {
   main {
-    width: 80%;
-    margin-top: 50px;
-    margin-bottom: 50px;
+    width: 100%;
+    margin: 50px auto;
   }
   .step-box {
     width: 90%;
-    margin-bottom: 20px;
+    margin: 0 auto 20px auto;
     float: none;
   }
   .step-img1 {
-    background-position: center bottom;
-    height: 210px;
+    background-position: bottom;
+    height: 250px
   }
   .step-img2 {
     background-position: center bottom;
-    height: 210px;
+    height: 250px;
   }
   .step-img3 {
     background-position: center bottom;
-    height: 210px;
+    height: 250px;
   }
+
+.step-box:last-child{
+  margin: 0 auto;
+}
+
   .text {
-    width: 550px;
+    width: 100%;
   }
 }
